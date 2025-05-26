@@ -20,7 +20,7 @@ CREATE TABLE sightings (
   species_id INT REFERENCES species(species_id),
   ranger_id INT REFERENCES rangers(ranger_id),
   location VARCHAR(255),
-  sighting_time DATE,
+  sighting_time TIMESTAMP,
   notes TEXT
 );
 
